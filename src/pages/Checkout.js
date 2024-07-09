@@ -10,19 +10,20 @@ const Checkout = () => {
 
   return (
     <section className='lg:h-screen px-10 py-20 lg:mb-28'>
-      <h1 className='text-3xl font-bold text-[#2FCD1A] mb-8'>
-        Checkout Details
-      </h1>
       {/* Back to Cart Button */}
       <button
-        className='mt-auto lg:w-full md:w-auto flex gap-3 items-center px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-md hover:bg-gray-100 mb-8 md:mb-0'
+        className='mt-auto  md:w-auto flex gap-3 items-center px-4 py-8 bg-white text-gray-800  md:mb-0'
         onClick={() => navigate('/cart')}
       >
         <FaArrowLeftLong />
         Back to Cart
       </button>
 
-      <div className='flex gap-10 items-center my-6'>
+      <h1 className='text-3xl font-bold text-[#2FCD1A] mb-8'>
+        Checkout Details
+      </h1>
+
+      <div className='lg:flex gap-10 items-center my-6'>
         <h2 className='text-xl font-semibold mb-4'>Credit Card</h2>
         <div className='flex gap-4 items-center mb-4'>
           <Visa />
